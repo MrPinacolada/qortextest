@@ -1,10 +1,10 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter,createWebHashHistory } from "vue-router";
 import Singers from "@/views/Singers.vue";
 import Albums from "@/views/Albums.vue";
 import Addsong from "@/views/Addsong.vue";
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: "/",
